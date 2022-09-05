@@ -1,0 +1,47 @@
+* {
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+#board, .boardInfo{
+    max-width: 500px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+}
+#start, .boardInfo{
+    font-size: 25px;
+}
+
+#gameOver{
+    display: none;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#start{
+    background-color: deeppink;
+    border: none;
+    color: white;
+}
+#scoreBoard {
+    display: inline-flex;
+}
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: cadetblue;
+}
+.snakeSquare {
+    background-color: chartreuse;
+}
+
+.foodSquare{
+    background-color: red;
+}
